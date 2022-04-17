@@ -20,7 +20,6 @@ try {
 	log.error(`[Storage] [ERROR] [${errorMessage}]`);
 	process.exit(1);
 }
-
 export const bucket = admin.storage().bucket();
 
 app.listen(secrets.port, () => {
