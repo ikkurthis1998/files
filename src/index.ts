@@ -17,7 +17,7 @@ try {
 	log.info(`[Storage] [END] Firebase Admin SDK Initialized`);
 } catch (error) {
 	const errorMessage = (error as Error).message || "No error description";
-	log.error(`[Storage] [ERROR] [${errorMessage}]`);
+	log.error(`[Storage] [ERROR] ${errorMessage}`);
 	process.exit(1);
 }
 export const bucket = admin.storage().bucket();
