@@ -4,7 +4,9 @@
 	"description": "",
 	"main": "src/index.ts",
 	"scripts": {
-		"dev": "rm -rf src/uploads && mkdir src/uploads && ts-node-dev src/index.ts"
+		"dev": "rm -rf src/uploads && mkdir src/uploads && ts-node-dev src/index.ts",
+		"build": "rm -rf build/uploads && mkdir build/uploads &&tsc",
+		"start": "node build/index.js"
 	},
 	"repository": {
 		"type": "git",
